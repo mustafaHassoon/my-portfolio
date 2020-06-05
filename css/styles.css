@@ -137,6 +137,12 @@ button:focus,
   padding: 20px;
   background: var(--dark-grey);
 }
+
+.page-header__logo {
+  display: inline-block;
+  margin-left: 15px;
+  max-width: 200px;
+
 .page-header__item {
   flex: 0 1 200px;
 }
