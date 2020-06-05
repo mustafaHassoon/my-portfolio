@@ -138,11 +138,6 @@ button:focus,
   background: var(--dark-grey);
 }
 
-.page-header__logo {
-  display: inline-block;
-  margin-left: 15px;
-  max-width: 200px;
-
 .page-header__item {
   flex: 0 1 200px;
 }
@@ -253,3 +248,8 @@ button:focus,
 }
 #gandola { fill: var(--svg-color-5);} ;
 .cls-322, .cls-311, { fill: var(--svg-color-5);} ;
+.contact-form {
+  text-align: center;
+  align-items: center;
+  margin-left: 40px;
+}

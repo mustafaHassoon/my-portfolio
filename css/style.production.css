@@ -346,3 +346,14 @@ button:focus,
 #gandola { fill: #4E0F27;} ;
 .cls-322 { fill: #4E0F27;} ;
 .cls-311 { fill: #4E0F27;} ;
+
+.contact-form {
+  align-items: center;
+  display: inline-block;
+  margin-left: 40px;
+}
+h5 { 
+  font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
