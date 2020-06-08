@@ -39,7 +39,6 @@ body {
   h4 {
     font-size: 30px;
     font-weight: 700;
-    
     text-align: center;
   }
 a:visited {
@@ -322,6 +321,9 @@ button:focus,
 #gandola { -webkit-animation: 20s gandola-move infinite alternate linear; animation: 20s gandola-move infinite alternate linear;
 }
 
+.cls-62 { fill:#f1e460;} ;
+.cls-63 { fill:#f1e460;} ;
+
 @-webkit-keyframes gandola-move {
   from {
     -webkit-transform: translate(16px, 0px);
@@ -366,7 +368,7 @@ h5 {
   display: inline-block;
   margin-left: 40px;
 }
-.about-container-item {
+.about_container-item {
   text-align: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -379,5 +381,42 @@ h5 {
 .profile__contact {
   max-width: 900px;
   margin: 0 auto;
+}
 
+.profile__about {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-right: 30px;
+
+}
+
+
+.button__cv {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  display: inline-block ;
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #FA2742;
+  color: white;
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  
+}
+#container {
+  display: block;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
