@@ -46,7 +46,7 @@
     <h4>Work</h4>
     <div class="grid">
       <!-- Grid items will live here -->
-      <div class="grid__item">
+      <!-- <div class="grid__item">
         <h2>Special movies App</h2>
         <p>
           Providing users with access to information on different movies. The application uses a REST API built with
@@ -55,7 +55,8 @@
         </p>
         <a
           href="https://cryptic-falls-87295.herokuapp.com/?fbclid=IwAR2BW1X7hu4MZRTcEYCemkND0QfXfUrp7N5Y1e_wkNkIU2LOwYsRB5A9R4s">See
-          Go to the website</a>
+          Go to the website
+        </a>
       </div>
       <div class="grid__item">
         <h2>My Quiz App</h2>
@@ -67,6 +68,8 @@
         <a href="https://mustafahassoon.github.io/myQuiz/welcome">Go to the website</a>
       </div>
       <div class="grid__item">
+
+
         <h2>To do app</h2>
         <p>
           Simple ToDo app using Vue.js. The application consist of a single view where users will be able to create,
@@ -82,12 +85,106 @@
         </p>
         <a href="https://mustafahassoon.github.io/todo/">Go to the website</a>
       </div>
+ -->
 
+
+
+
+
+      <div class="grid__item">
+        <button class="collapsible">Special Movies App</button>
+        <div class="content">
+          <img src="img/movie-api-imag.PNG" alt="movie-api" style="width:100%;">
+          <p>
+            Providing users with access to information on different movies. The application uses a REST API built with
+            Node.js for the server-side and React client-side for the client-side with Node.js for the server side and
+            React client-side for the client-side.
+          </p>
+          <a
+            href="https://cryptic-falls-87295.herokuapp.com/?fbclid=IwAR2BW1X7hu4MZRTcEYCemkND0QfXfUrp7N5Y1e_wkNkIU2LOwYsRB5A9R4s">
+            Go to the website
+          </a>
+          <br>
+          <a href="https://github.com/mustafaHassoon/React-movies-app">
+            See the repository
+          </a>
+        </div>
+      </div>
+
+
+      <div class="grid__item">
+        <button class="collapsible">My Quiz App</button>
+        <div class="content">
+          <img src="img/quiz-imag.PNG" alt="quiz" style="width:100%;">
+          <p>
+            Basic quiz application using Angular and TypeScript. The application presents users with multiple choice
+            questions on various topics. Once users have answered all the questions, the application will display their
+            results.
+          </p>
+          <a href="https://mustafahassoon.github.io/myQuiz/welcome">
+            Go to the website
+          </a>
+          <br>
+          <a href="https://github.com/mustafaHassoon/myQuiz">
+            See the repository
+          </a>
+        </div>
+      </div>
+
+      <div class="grid__item">
+        <button class="collapsible">To Do App</button>
+        <div class="content">
+          <img src="img/to-do-img.PNG" alt="to-do" style="width:100%;">
+          <p>
+            Simple ToDo app using Vue.js. The application consist of a single view where users will be able to create,
+            update, complete, and delete ToDo items from a list.
+          </p>
+          <a href="https://mustafahassoon.github.io/todo/">
+            Go to the website
+          </a>
+          <br>
+          <a href="https://github.com/mustafaHassoon/todo">
+            See the repository
+          </a>
+        </div>
+      </div>
+
+
+      <div class="grid__item">
+        <button class="collapsible">Chat App</button>
+        <div class="content">
+          <img src="img/chat-app-img.png" alt="chat-app" style="width:100%;">
+          <p>
+            An application built with React Native and Gifted Chat, which allows users to chat with friends, as well as
+            enable them to send photos and share their location.
+          </p>
+          <br>
+          <a href="https://github.com/mustafaHassoon/Chat-App">
+            See the repository
+          </a>
+        </div>
+      </div>
 
 
 
     </div>
   </section>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
 </body>
 <footer class="page-footer">
   <p>Find me on</p>
