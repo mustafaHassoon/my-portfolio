@@ -185,7 +185,7 @@ button:focus,
 }
 
 .grid__item {
-  background-color: lightgray;
+  background-color: #E8EAE3;
   /* padding: 20px; */
 }
 @media all and (max-width: 500px) {
@@ -555,6 +555,6 @@ font-style: normal;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  background-color: #E8EAE3;
 }
 
