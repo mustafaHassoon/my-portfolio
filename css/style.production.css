@@ -126,6 +126,7 @@ button:focus,
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  
 }
 .profile {
   max-width: 700px;
@@ -149,7 +150,7 @@ button:focus,
   -webkit-box-flex: 0;
       -ms-flex: 0 1 200px;
           flex: 0 1 200px;
-          max-height: 80px;
+          max-height: 50px;
 }
 .page-header__item:last-child {
   -webkit-box-flex: 1;
@@ -414,9 +415,9 @@ h1 {
 
 h4 {
   font-family: 'Roboto', sans-serif, 'arial';
-  font-weight: 400;
-  font-size: 20px;
-  color: #9b9b9b;
+  font-weight: 600;
+  font-size: 24px;
+  color: #424242;
   line-height: 1.5;
 }
 
@@ -483,7 +484,7 @@ textarea:focus ~ span {
 
 textarea {
   width: 100%;
-  min-height: 15em;
+  min-height: 10em;
 }
 
 .input-container {
@@ -557,4 +558,186 @@ font-style: normal;
   transition: max-height 0.2s ease-out;
   background-color: #E8EAE3;
 }
+ /* .................................................. */
 
+.graph-cont {
+  width: calc(100% - 40px);
+  width: 90%;
+  max-width: 800px;
+  
+}
+
+.bar1 {
+  
+  
+  min-width: 180px;
+  max-height: 1.7rem;
+  min-height: 30px;
+
+  margin: 0 auto 25px auto;
+  
+  font-size: 2vh;
+ 
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+
+  padding: 0px 0px 0px 10px;
+  position: relative;
+  height: 1.5vw;
+  position: absolute;
+  width: 10%;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+
+
+
+
+.bar1:hover {
+  max-width: 736px;
+  width: 78%; 
+  
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.bar1 {
+  top: 15%;
+  background-color: #ff312e;
+}
+
+
+.bar1back {
+  
+  max-width: 800px;
+ 
+  max-height: 1.7rem;
+  min-height: 30px;
+
+  margin: 0 auto 25px auto;
+  
+  text-align: right;
+  font-size: 14pt;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  padding: 0px 10px 0px 0px;
+
+  
+  position: relative;
+  height: 1.5vw;
+  position: absolute;
+  width: 100%;
+ background-color: #ccc;
+ padding: 3 3 3 10px;
+ top: 15%;
+}
+
+/* .................................................. */
+
+.skills .skill{
+  display:block;
+  font:700 16px ;
+  font-size: 1.1rem;
+  font-weight: 700;
+ 
+  color: #555;
+  ;
+}
+.skills{
+  margin-top:20px;
+}
+.skills .bar{
+  display:block;
+  height:1.5rem;
+  position:relative;
+  background:#ccc;
+  
+}
+.skills .bar:before{
+  content:'';
+  left:0;
+  top:0;
+  height:100%;
+  position:absolute;
+}
+.skills .html .bar:before{
+  width:80%;
+  background:#ff312e;
+}
+.skills .css .bar:before{
+  width:85%;
+  background:#ff312e;
+}
+.skills .js .bar:before{
+  width:90%;
+  background:#ff312e;
+}
+.skills .node .bar:before{
+  width:70%;
+  background:#ff312e;
+}
+.skills .sql .bar:before{
+  width:50%;
+  background:#ff312e;
+}
+.skills .react .bar:before{
+  width:65%;
+  background:#ff312e;
+}
+.skills .ag .bar:before{
+  width:55%;
+  background:#ff312e;
+}
+.skills .vue .bar:before{
+  width:45%;
+  background:#ff312e;
+}
+.skills .rn .bar:before{
+  width:60%;
+  background:#ff312e;
+}
+
+/* .................................................. */
+
+
+/* .................................................. */
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 500px; /* Should be removed. Only for demonstration */
+  text-align: center;
+  border-left: 1px solid #ccc;
+  height: 400px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.column1 {
+  float: left;
+  width: 33.33%;
+
+  height: 500px; /* Should be removed. Only for demonstration */
+  text-align: center;
+  height: 400px;
+  text-align: justify;
+  text-justify: inter-word;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
